@@ -113,7 +113,6 @@ export default function VoicesFromCircleSection() {
           </p>
         </div>
 
-        {/* Testimonials Carousel */}
         <div className="mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
@@ -130,19 +129,15 @@ export default function VoicesFromCircleSection() {
                 }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
-                {/* Testimonial Card */}
                 <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 relative overflow-hidden group-hover:-translate-y-2">
-                  {/* Gradient Overlay */}
                   <div
                     className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${testimonial.color}`}
                   />
 
-                  {/* Quote Icon */}
                   <div className="absolute top-6 right-6 opacity-10">
                     <Quote className="w-12 h-12 text-gray-400" />
                   </div>
 
-                  {/* Stars */}
                   <div className="flex gap-1 mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star
@@ -152,12 +147,10 @@ export default function VoicesFromCircleSection() {
                     ))}
                   </div>
 
-                  {/* Quote */}
                   <blockquote className="text-gray-700 leading-relaxed mb-6 text-lg relative z-10">
                     "{testimonial.quote}"
                   </blockquote>
 
-                  {/* Author */}
                   <div className="flex items-center gap-4">
                     <div
                       className={`w-14 h-14 rounded-full bg-gradient-to-br ${testimonial.color} flex items-center justify-center text-white font-bold text-lg shadow-lg`}
@@ -177,14 +170,12 @@ export default function VoicesFromCircleSection() {
                     </div>
                   </div>
 
-                  {/* Hover Effect */}
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent to-blue-50 opacity-0 group-hover:opacity-30 transition-opacity duration-500 rounded-3xl" />
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Carousel Indicators */}
           <div className="flex justify-center gap-3 mt-8">
             {testimonials.map((_, index) => (
               <button
@@ -200,7 +191,6 @@ export default function VoicesFromCircleSection() {
           </div>
         </div>
 
-        {/* Community Stats */}
         <div
           id="community-stats"
           data-animate
@@ -214,7 +204,6 @@ export default function VoicesFromCircleSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-purple-50 opacity-50" />
 
             <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-8">
-              {/* Profile Pictures Stack */}
               <div className="flex -space-x-4">
                 {communityStats.map((stat, index) => (
                   <div

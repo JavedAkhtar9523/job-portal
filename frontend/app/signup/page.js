@@ -25,7 +25,6 @@ export default function SpreadsRegister() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 flex items-center justify-center p-4">
       <div className="w-full max-w-6xl grid lg:grid-cols-2 gap-12 items-center">
-        {/* Left Side - Welcome Content */}
         <div className="space-y-8 lg:pr-12">
           <div className="space-y-6">
             <div className="inline-block">
@@ -117,7 +116,6 @@ export default function SpreadsRegister() {
           </div>
         </div>
 
-        {/* Right Side - Register Form */}
         <div className="w-full max-w-md mx-auto">
           <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 space-y-6">
             <div className="text-center space-y-2">
@@ -129,7 +127,6 @@ export default function SpreadsRegister() {
               </p>
             </div>
 
-            {/* User Type Selection */}
             <div className="space-y-3">
               <label className="text-sm font-medium text-gray-700">
                 I am a:
@@ -164,7 +161,6 @@ export default function SpreadsRegister() {
               </div>
             </div>
 
-            {/* Social Sign Up Buttons */}
             <div className="space-y-3">
               <button className="w-full flex items-center justify-center px-4 py-3 border border-gray-200 rounded-xl hover:bg-gray-50 transition-all duration-200 hover:shadow-md group">
                 <svg className="w-5 h-5 mr-3" viewBox="0 0 24 24">
@@ -215,7 +211,6 @@ export default function SpreadsRegister() {
               </div>
             </div>
 
-            {/* Registration Form */}
             <div className="space-y-4">
               <div>
                 <input
@@ -354,7 +349,6 @@ export default function SpreadsRegister() {
                 </button>
               </div>
 
-              {/* Terms and Conditions */}
               <div className="flex items-start space-x-2">
                 <input
                   type="checkbox"

@@ -22,7 +22,6 @@ const JobOpportunitiesSection = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        {/* Left Content */}
         <div
           className={`space-y-8 transition-all duration-1000 ease-out ${
             isVisible
@@ -58,7 +57,6 @@ const JobOpportunitiesSection = () => {
           </div>
         </div>
 
-        {/* Right Tags Grid */}
         <div
           className={`transition-all duration-1000 ease-out delay-300 ${
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
@@ -76,7 +74,6 @@ const JobOpportunitiesSection = () => {
                   animationFillMode: "both",
                 }}
               >
-                {/* Gradient Background on Hover */}
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 {/* Floating Animation */}
@@ -86,13 +83,11 @@ const JobOpportunitiesSection = () => {
                   </span>
                 </div>
 
-                {/* Subtle Glow Effect */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover:opacity-20 blur-xl transition-all duration-500"></div>
               </div>
             ))}
           </div>
 
-          {/* Decorative Elements */}
           <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full opacity-20 blur-2xl animate-pulse"></div>
           <div
             className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-15 blur-3xl animate-pulse"

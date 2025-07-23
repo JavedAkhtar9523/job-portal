@@ -92,7 +92,6 @@ export default function WhyJoinSpreadsSection() {
                   </p>
                 </div>
 
-                {/* Hover Effect Indicator */}
                 <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="w-8 h-1 bg-blue-600 rounded-full" />
                 </div>
@@ -101,7 +100,6 @@ export default function WhyJoinSpreadsSection() {
           })}
         </div>
 
-        {/* Call to Action */}
         <div className="text-center mt-16">
           <div className="space-y-6">
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">

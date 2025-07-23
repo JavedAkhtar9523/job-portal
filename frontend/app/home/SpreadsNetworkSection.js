@@ -89,7 +89,6 @@ const SpreadsNetworkSection = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div
@@ -103,7 +102,6 @@ const SpreadsNetworkSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Header */}
         <div
           className={`text-center mb-20 transition-all duration-1000 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
@@ -127,7 +125,6 @@ const SpreadsNetworkSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left side - Modern Illustration */}
           <div
             className={`relative h-[600px] transition-all duration-1200 delay-300 ${
               isVisible
@@ -136,16 +133,13 @@ const SpreadsNetworkSection = () => {
             }`}
             onMouseMove={handleMouseMove}
           >
-            {/* Main central hub */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
               <div className="relative">
-                {/* Central core */}
                 <div className="w-24 h-24 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-2xl relative">
                   <Network className="w-12 h-12 text-white" />
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full animate-ping opacity-20"></div>
                 </div>
 
-                {/* Orbiting rings */}
                 <div
                   className="absolute inset-0 animate-spin"
                   style={{ animationDuration: "20s" }}
@@ -164,7 +158,6 @@ const SpreadsNetworkSection = () => {
               </div>
             </div>
 
-            {/* Connection lines */}
             <svg className="absolute inset-0 w-full h-full pointer-events-none">
               <defs>
                 <linearGradient
@@ -193,7 +186,6 @@ const SpreadsNetworkSection = () => {
               ))}
             </svg>
 
-            {/* Floating interactive elements */}
             {floatingElements.map((element, index) => {
               const angle = (index * 360) / floatingElements.length;
               const radius = 180 + Math.sin(Date.now() * 0.001 + index) * 20;
@@ -223,7 +215,6 @@ const SpreadsNetworkSection = () => {
                     </div>
                   </div>
 
-                  {/* Glowing effect */}
                   <div
                     className={`absolute inset-0 ${element.size} bg-white/5 rounded-xl animate-ping`}
                   ></div>
@@ -231,7 +222,6 @@ const SpreadsNetworkSection = () => {
               );
             })}
 
-            {/* Particle effects */}
             {[...Array(12)].map((_, i) => (
               <div
                 key={i}
@@ -246,7 +236,6 @@ const SpreadsNetworkSection = () => {
             ))}
           </div>
 
-          {/* Right side - Features */}
           <div
             className={`space-y-6 transition-all duration-1000 delay-700 ${
               isVisible
@@ -269,7 +258,6 @@ const SpreadsNetworkSection = () => {
                       : "bg-white/5 border-white/10 shadow-lg hover:bg-white/10"
                   }`}
                 >
-                  {/* Active indicator */}
                   {activeFeature === index && (
                     <div
                       className={`absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b ${feature.color} rounded-l-3xl`}
@@ -304,7 +292,6 @@ const SpreadsNetworkSection = () => {
                     </div>
                   </div>
 
-                  {/* Hover glow effect */}
                   <div
                     className={`absolute inset-0 rounded-3xl opacity-0 transition-opacity duration-300 ${
                       activeFeature === index
@@ -316,7 +303,6 @@ const SpreadsNetworkSection = () => {
               </div>
             ))}
 
-            {/* Navigation dots */}
             <div className="flex justify-center space-x-3 mt-12">
               {features.map((_, index) => (
                 <button
@@ -334,7 +320,6 @@ const SpreadsNetworkSection = () => {
         </div>
       </div>
 
-      {/* Custom CSS for floating animations */}
       <style jsx>{`
         ${floatingElements
           .map(

@@ -79,7 +79,6 @@ export default function TalentSpeaksSection() {
                       />
                     ))}
 
-                    {/* Second Line */}
                     <polyline
                       fill="none"
                       stroke="#8B5CF6"
@@ -87,7 +86,7 @@ export default function TalentSpeaksSection() {
                       points="20,90 60,85 100,70 140,75 180,65 220,60 260,50"
                       className="drop-shadow-sm"
                     />
-                    {/* Data Points */}
+
                     {[
                       { x: 20, y: 90 },
                       { x: 60, y: 85 },
@@ -109,29 +108,21 @@ export default function TalentSpeaksSection() {
                   </svg>
                 </div>
 
-                {/* Person with Device */}
                 <div className="flex items-center justify-center">
                   <div className="relative">
-                    {/* Person */}
                     <div className="flex flex-col items-center">
-                      {/* Head */}
                       <div className="w-12 h-12 bg-gradient-to-b from-orange-200 to-orange-300 rounded-full mb-2 relative">
-                        {/* Hair */}
                         <div className="absolute -top-2 left-1 w-10 h-8 bg-gray-800 rounded-full" />
                       </div>
 
-                      {/* Body */}
                       <div className="w-16 h-20 bg-gradient-to-b from-yellow-100 to-yellow-200 rounded-lg relative">
-                        {/* Arms */}
                         <div className="absolute -left-3 top-4 w-6 h-2 bg-gradient-to-r from-orange-200 to-orange-300 rounded-full transform -rotate-12" />
                         <div className="absolute -right-3 top-4 w-6 h-2 bg-gradient-to-l from-orange-200 to-orange-300 rounded-full transform rotate-12" />
 
-                        {/* Laptop */}
                         <div className="absolute -right-4 top-2 w-8 h-5 bg-gray-700 rounded transform rotate-12">
                           <div className="w-full h-3 bg-blue-600 rounded-t" />
                         </div>
 
-                        {/* Pointing Device */}
                         <div className="absolute -left-6 top-1 w-4 h-1 bg-gray-400 rounded-full transform -rotate-45" />
                       </div>
                     </div>
@@ -139,7 +130,6 @@ export default function TalentSpeaksSection() {
                 </div>
               </div>
 
-              {/* Floating Elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full opacity-20 animate-bounce" />
               <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-purple-500 rounded-full opacity-30 animate-pulse" />
               <div className="absolute top-1/2 -left-8 w-4 h-4 bg-yellow-400 rounded-full opacity-25 animate-ping" />
