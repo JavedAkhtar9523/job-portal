@@ -1,0 +1,23 @@
+.header{
+          background-color: var(--color-1);
+}
+.header-button-join-now{
+          /* background-color: var(--color-2); */
+          background-color: rgb(54, 60, 229);
+          color: white;
+          padding: 8px 15px;
+          border-radius: 5px;
+          text-decoration: none;
+          font-weight: bold;
+          transform: all 0.3s ease-in;
+}
+@media (max-width: 600px) {
+          .header-button-join-now {
+                    padding: 5px 10px;
+          }
+          
+}
+.header-button-join-now:hover{
+background-color: rgb(5, 11, 168);
+
+}
